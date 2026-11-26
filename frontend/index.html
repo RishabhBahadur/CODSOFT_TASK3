@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeeNary AI | Image Caption Generator</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>SeeNary AI</h1>
+            <p>See the Image. Tell the Story.</p>
+            <p>Upload an image and let AI generate a caption.</p>
+        </header>
+
+        <form id="captionForm">
+            <div class="upload-area">
+                <label for="imageInput">Choose an image (JPG, PNG, or WEBP)</label>
+                <input
+                    type="file"
+                    id="imageInput"
+                    name="image"
+                    accept=".jpg,.jpeg,.png,.webp"
+                    required
+                >
+                <img id="preview" alt="Selected image preview">
+            </div>
+
+            <button type="submit" id="generateButton">Generate Caption</button>
+        </form>
+
+        <p id="status" role="status"></p>
+
+        <section class="result" id="result" aria-live="polite">
+            <h2>Generated Caption</h2>
+            <p id="caption"></p>
+        </section>
+    </main>
+</body>
+</html>

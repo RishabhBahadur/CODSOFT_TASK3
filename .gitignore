@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dataset
+dataset/
+
+# Runtime uploads
+uploads/*
+!uploads/.gitkeep
+
+# Generated outputs
+outputs/
+project_files.txt
+
+# Large generated artifacts
+*.keras
+!models/best_caption_model.keras
+*.h5
+*.npz
+
+# Exclude the backup model
+models/best_caption_model_backup.keras
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
